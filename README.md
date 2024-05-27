@@ -9,7 +9,7 @@ Check out [LIVE DEMO](https://final-x-clone.onrender.com/) here!!
 
 
 ## Screenshot
-<img width="626" alt="Screenshot 2024-05-25 at 2 02 10 AM" src="![Screenshot 2024-05-27 at 11 44 01 AM](https://github.com/Taufeeq1996/techis-x-clone/assets/100328416/9fbd14cf-91cf-448d-8211-c0b0100f5847)
+<img width="626" alt="Screenshot 2024-05-25 at 2 02 10 AM" src="![Uploading Screenshot 2024-05-27 at 11.44.01 AM.png…]()
 ">
 <img width="626" alt="Screenshot 2024-05-25 at 2 03 32 AM" src="![Uploading Screenshot 2024-05-27 at 11.45.49 AM.png…]()
 ">
