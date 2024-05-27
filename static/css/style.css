@@ -1,0 +1,291 @@
+/*
+全体/共通
+************************************/
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.btn {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    /* border-radius: 50px; */
+    /* width: 70px; */
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+}
+
+.btn-gray {
+    color: white;
+    background-color: rgb(249, 55, 55);
+}
+
+.btn:hover {
+    color: white;
+}
+
+a {
+    font-size: 13px;
+    color: rgb(29, 161, 242);
+    text-decoration: none;
+}
+
+a.btn-gray {
+    color: white;
+}
+
+a:visited {
+    color: rgb(29, 161, 242);
+}
+
+a.btn-gray:visited {
+    color: white;
+}
+
+.container {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+    max-width: 600px;
+    border-left: 1px solid rgb(235, 238, 240);
+    border-right: 1px solid rgb(235, 238, 240);
+    border-top: 1px solid rgb(235, 238, 240);
+}
+
+
+/*
+Main
+*************************************/
+
+.main {
+    text-align: left;
+}
+
+.main .main-header {
+    display: flex;
+    align-items: center;
+}
+
+.main .main-header .logo {
+    width: 45px;
+}
+
+.main .main-header h1 {
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 50px;
+    color: white;
+}
+
+.main .main-header {
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 238, 240);
+}
+
+
+/*
+Home
+*************************************/
+
+.home {}
+
+.home .tweet-post {
+    display: flex;
+    padding: 10px;
+}
+
+.home .tweet-post .my-icon {
+    width: 80px;
+    padding: 5px 15px 10px 10px;
+}
+
+.home .tweet-post .my-icon img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(235, 238, 240);
+}
+
+.home .tweet-post .input-area {
+    width: calc(100% - 80px);
+    flex-grow: 1;
+}
+
+.home .tweet-post .edit-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(197, 199, 201);
+}
+
+.home .tweet-post .input-area input[type=text] {
+    border: 0px;
+    width: 100%;
+    /* background: #e6fef7; */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.home .tweet-post .input-area input[type=text]:focus {
+    /* Hide the border during focus */
+    outline: none;
+}
+
+.home .tweet-post .input-area textarea {
+    border: 1px solid rgb(184, 181, 181);
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    /* Hide the customizing size area */
+    resize: none;
+    border-radius: 7px;
+}
+
+.home .tweet-post .input-area textarea:focus {
+    /* Hide the border during focus */
+    outline: none;
+    height: 100px;
+}
+
+.home .tweet-post .input-area .bottom-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid rgb(235, 238, 240);
+    padding-top: 8px;
+}
+
+.home .ditch {
+    height: 15px;
+    border-top: 1px solid rgb(235, 238, 240);
+    border-bottom: 1px solid rgb(235, 238, 240);
+    background-color: rgb(247, 248, 248);
+    border-bottom: 1px solid rgb(235, 238, 240);
+}
+
+.home .tweet-list {}
+
+.home .tweet-list .tweet {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid rgb(235, 238, 240);
+}
+
+.home .tweet-list .tweet .user {
+    width: 80px;
+    padding: 5px 15px 10px 10px;
+}
+
+.home .tweet-list .tweet .user img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(235, 238, 240);
+}
+
+.home .tweet-list .tweet .name {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .tweet-list .tweet .name a {
+    color: rgb(21, 32, 43);
+}
+
+.home .tweet-list .tweet .name a .nickname {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.home .tweet-list .tweet .name a .datetime {
+    padding-left: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.home .tweet-list .tweet .name .small-menu {
+    padding-right: 10px;
+}
+
+.home .tweet-list .tweet .content {
+    width: calc(100% - 60px);
+}
+
+.home .tweet-list .tweet .content p {
+    font-size: 16px;
+    padding: 8px 0 0 0;
+    margin-bottom: 8px;
+    color: white;
+}
+.p3{
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.home .tweet-list .tweet .content img.post-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border: 1px solid rgb(197, 199, 201);
+}
+
+.home .tweet-list .tweet .content .icon-list {
+    display: flex;
+    margin-top: 15px;
+}
+
+.home .tweet-list .tweet .content .icon-list .comment img {
+    width: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.home .tweet-list .tweet .content .icon-list .comment-count {
+    width: 25px;
+    margin-right: 20px;
+    padding-top: 2px;
+    color: #474747; 
+    /* color: white; */
+}
+
+.home .tweet-list .tweet .content .icon-list .like img {
+    width: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.home .tweet-list .tweet .content .icon-list .like-count {
+    width: 25px;
+    padding-top: 2px;
+    /* color: #474747; */
+    color: white;
+}
+
+
+@media screen and (max-width:500px) {
+    .home .tweet-list .tweet .user {
+        width: 60px;
+        padding: 5px 10px 10px 5px;
+    }
+    .bottom-area .btn {
+        margin-top: 10px;
+    }
+}

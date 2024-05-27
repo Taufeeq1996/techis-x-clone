@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load util_tags %}
+
+{% block content %}
+
+{# --- Main --- #}
+<div class="main">
+    <div class="main-header">
+        <img src="{{ STATIC_URL }}img/X_logo.jpeg" class="logo" />
+        <h1>Home</h1>
+    </div>
+    
+    {# --- Tweet Post --- #}
+    <div class="tweet-post">
+        <div class="my-icon">
+            <img src="{{ STATIC_URL }}img/sample-icon.jpg" class="">
+        </div>
+        <div class="input-area">
+            <form action="/tweetAdd/" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Your name" maxlength="14" required>
+                <textarea name="body" placeholder="What's happening?" maxlength="140" required></textarea>
+                <div class="bottom-area">
+                    <div class="mb-0">
+                        <input class="form-control form-control-sm" name="image" type="file">
+                    </div>
+
+                    <button class="btn" type="submit">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="ditch"></div>
+
+    {% if tweets.count == 0 %}
+        <p class="p3">There is no tweet now.</p>
+    {% else %}
+        {% for tweet in tweets %}
+
+        {# --- Tweet List --- #}
+        <div class="tweet-list">
+            <div class="tweet">
+                <div class="user">
+                    <a href="#">
+                        <img src="{{ STATIC_URL }}img/sample-icon.jpg" class="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="name">
+                        <a href="#" class="">
+                            <span class="nickname">
+                                {{ tweet.name }}
+                             </span>
+                            <span class="datetime">
+                                {% util_date tweet.created_at|date:"Y/m/d H:i:s" %}
+                            </span>
+                        </a>
+                        {# --- Menu for respective tweets --- #}
+                        <img src="{{ STATIC_URL }}img/icon-small-menu.svg" class="small-menu js-popover"
+                            data-bs-container="body"
+                            data-bs-toggle="popover"
+                            data-bs-placement="left"
+                            data-bs-content="<a href='/tweetEditView/{{ tweet.id }}/'>Edit</a><br><a href='/tweetDelete/{{ tweet.id }}/'>Delete</a>"
+                            data-bs-html="true">
+                    </div>
+                    <p>
+                        {{tweet.body}}
+                    </p>
+                    {% if tweet.image is not Null %}
+                        <a href="{{ tweet.image.url }}" target="_blank">
+                            <img class="post-image" src="{{ tweet.image.url }}">
+                        </a>
+                    {% endif %}
+                    <div class="icon-list">
+                        <div class="like js-like" data-tweet-id="{{ tweet.id }}">
+                            <img src="{{ STATIC_URL }}img/heart.png">
+                        </div>
+                        <div class="like-count js-like-count">
+                            {{ tweet.like_count }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+
+</div>
+
+{% endblock %}
