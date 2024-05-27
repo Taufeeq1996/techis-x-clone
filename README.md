@@ -9,7 +9,8 @@ Check out [LIVE DEMO](https://final-x-clone.onrender.com/) here!!
 
 
 ## Screenshot
-<img width="626" alt="Screenshot 2024-05-25 at 2 02 10 AM" src="![image](https://github.com/Taufeeq1996/techis-x-clone/assets/100328416/5abdf9b7-d0c7-41ca-9b67-3c0708669d76)"/>
+![Screenshot 2024-05-27 at 11 44 01 AM](https://github.com/Taufeeq1996/techis-x-clone/assets/100328416/52c45b77-49ff-4de0-94ed-7dd46e45325d)
+
 ![Screenshot 2024-05-27 at 11 45 49 AM](https://github.com/Taufeeq1996/techis-x-clone/assets/100328416/33a811dd-2be7-4155-929a-2d04f3489c2b)
 
 ## Tech used
