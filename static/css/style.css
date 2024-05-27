@@ -15,7 +15,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     /* border-radius: 50px; */
-    /* width: 70px; */
+    width: 70px;
     border-bottom-left-radius: 9999px;
     border-bottom-right-radius: 9999px;
     border-top-left-radius: 9999px;
