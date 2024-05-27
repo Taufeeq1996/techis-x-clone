@@ -9,8 +9,10 @@ Check out [LIVE DEMO](https://final-x-clone.onrender.com/) here!!
 
 
 ## Screenshot
-<img width="626" alt="Screenshot 2024-05-25 at 2 02 10 AM" src="https://github.com/SubhamRakshit97/X-clone/assets/111345784/60662bdf-fe6e-4c3d-860a-660181af2655">
-<img width="626" alt="Screenshot 2024-05-25 at 2 03 32 AM" src="https://github.com/SubhamRakshit97/X-clone/assets/111345784/13715a3e-29f5-4166-9fe0-f933cc72a903">
+<img width="626" alt="Screenshot 2024-05-25 at 2 02 10 AM" src="![Screenshot 2024-05-27 at 11 44 01 AM](https://github.com/Taufeeq1996/techis-x-clone/assets/100328416/9fbd14cf-91cf-448d-8211-c0b0100f5847)
+">
+<img width="626" alt="Screenshot 2024-05-25 at 2 03 32 AM" src="![Uploading Screenshot 2024-05-27 at 11.45.49 AM.png…]()
+">
 
 ## Tech used
 ```
