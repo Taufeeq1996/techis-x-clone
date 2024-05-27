@@ -68,15 +68,15 @@ def tweetLikeAdd(request, tweet_id):
 
   return JsonResponse({'result': 'successful'})
 
-def tweetLikeSubtract(request, tweet_id):
-  # Get requested tweet
-  tweet = Tweet.objects.get(id = tweet_id)
+# def tweetLikeSubtract(request, tweet_id):
+#   # Get requested tweet
+#   tweet = Tweet.objects.get(id = tweet_id)
 
-  # Subtract count
-  new_like_count = tweet.like_count - 1
-  tweet.like_count = new_like_count
+#   # Subtract count
+#   new_like_count = tweet.like_count - 1
+#   tweet.like_count = new_like_count
 
-  # Save
-  tweet.save()
+#   # Save
+#   tweet.save()
 
-  return JsonResponse({'result': 'successful'})
+#   return JsonResponse({'result': 'successful'})

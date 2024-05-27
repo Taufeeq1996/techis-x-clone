@@ -24,5 +24,5 @@ urlpatterns = [
     path('tweetDelete/<int:tweet_id>/', tweetDelete),
     path('tweetEditView/<int:tweet_id>/', tweetEditView),
     path('tweetLikeAdd/<int:tweet_id>/', tweetLikeAdd),
-    path('tweetLikeSubtract/<int:tweet_id>/', tweetLikeSubtract),
+    # path('tweetLikeSubtract/<int:tweet_id>/', tweetLikeSubtract),
 ]
