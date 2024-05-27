@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tweets.views import tweetListView, tweetAdd, tweetDelete, tweetEditView, tweetLikeAdd, tweetLikeSubtract
+from tweets.views import tweetListView, tweetAdd, tweetDelete, tweetEditView, tweetLikeAdd
 
 urlpatterns = [
     path('admin/', admin.site.urls),
